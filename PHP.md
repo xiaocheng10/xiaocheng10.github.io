@@ -9,5 +9,5 @@ Title:PHP
 2. 输出的指令为echo和print
 
 ``` bash
-$ echo "hello world";
+ echo "hello world";
 ```
