@@ -11,7 +11,7 @@ title:PHP
 3. 输出的指令为echo和print
 
 '''
-   <?php
-   echo "hello world";
-   ?>
+<?php
+echo "hello world";
+?>
 '''
