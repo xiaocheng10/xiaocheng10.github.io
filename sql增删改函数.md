@@ -5,6 +5,7 @@ data：2020-11-17
 
 #在数据库中增加一段数据
 
+
 ##insert语句
 
 ```
@@ -16,21 +17,24 @@ data：2020-11-17
     insert into user set column_name1=value1,column_name2=value2,....;
     这种方法允许将列表和列值成对的出现和使用，如：
     insert into user set id=123,name='绕',age=18;
-3. 前面两种方法的不同点:  (1)第一种方法如果value中什么都不写，则表示mysql将使用表中的每一列的默认值插入新纪录，如：
-                                                                          insert into user() value()
-                                           如果表名后面什么都不写，即表示向表中所有字段赋值，此时不仅在values中的值与列数一
-                                             致，且顺序不能颠倒。如：
-                                                                         列数为3列
-                                                                         insert into user value(123,'绕');错
-                                                                         insert into user value(123,'绕',19);对
-                                      (2)第二种方法使用了set方式，必须至少为一列赋值。如果一个字段使用了省缺值（如默认或自增值）
-                                          ，这两种方法都可以省略这些字段。如：
-                                                                         id字段使用了自增值
-                                                                         insert into user(name,age) value(ni,19);
-                                                                         insert into user set name=ni,age=19;
+3. 前面两种方法的不同点:  
+   (1)第一种方法如果value中什么都不写，则表示mysql将使用表中的每一列的默认值插入新纪录，如：
+                                                      insert into user() value()
+       如果表名后面什么都不写，即表示向表中所有字段赋值，此时不仅在values中的值与列数一
+       致，且顺序不能颠倒。如：
+                                                        列数为3列
+                                                         insert into user value(123,'绕');错
+                                                         insert into user value(123,'绕',19);对
+   (2)第二种方法使用了set方式，必须至少为一列赋值。如果一个字段使用了省缺值（如默认或自增值）
+       ，这两种方法都可以省略这些字段。如：
+                                                          id字段使用了自增值
+                                                          insert into user(name,age) value(ni,19);
+                                                          insert into user set name=ni,age=19;
 ```
 
 #删除函数
+
+
 ##删数据
 
 ```
@@ -56,6 +60,8 @@ data：2020-11-17
 ```
 
 #函数
+
+
 ##addslashes()
 
 ```
