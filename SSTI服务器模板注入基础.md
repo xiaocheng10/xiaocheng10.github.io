@@ -33,6 +33,6 @@ data:2020-12-07
 
 下图为ssti的一些模板渲染引擎及利用
 
-![]()
+![ssti1](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/ssti1.jpg)
 
 此图为url的可控，即url输入什么就输出什么
