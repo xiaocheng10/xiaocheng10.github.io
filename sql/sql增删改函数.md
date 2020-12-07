@@ -3,10 +3,10 @@ title：sql增删改函数
 data：2020-11-17
 ---
 
-#在数据库中增加一段数据
+# 在数据库中增加一段数据
 
 
-##insert语句
+## insert语句
 
 ```
 1. 在标准的sql语句中，一次插入一条记录的insert语句的一种形式
@@ -32,17 +32,16 @@ data：2020-11-17
                                                           insert into user set name=ni,age=19;
 ```
 
-#删除函数
+# 删除函数
 
-
-##删数据
+## 删数据
 
 ```
 1. delete from 表名；
 2. 有条件的删除数据：delete from 表名 where id=1;
 ```
 
-##删除结构
+## 删除结构
 
 ```
 1. 删数据库：drop database 数据库名
@@ -51,7 +50,7 @@ data：2020-11-17
    如：delete from user where id=16
 ```
 
-#修改函数
+# 修改函数
 
 ```
 1. 修改所有：updata 表名 set 列名='新的值，非数字加单引号'
@@ -59,10 +58,10 @@ data：2020-11-17
     如：updata user set username='tt' where id=15
 ```
 
-#函数
+# 函数
 
 
-##addslashes()
+## addslashes()
 
 ```
 1. addslashes()函数返回在预定义字符之前添加反斜杠的字符串
@@ -76,13 +75,13 @@ data：2020-11-17
 4. 语法：addslashes(string)  string为要转义的字符串
 ```
 
-##stripslashes()
+## stripslashes()
 
 ```
 1. 函数删除由addslashes()函数添加的反斜杠
 ```
 
-##mysql_real_escape_string()
+## mysql_real_escape_string()
 
 ```
 1. 函数转义sql语句中使用字符串中的特殊字符
@@ -99,13 +98,13 @@ data：2020-11-17
              connection 可选。规定mysql连接，未规定，则用上一个连接
 ```
 
-##ctype_digit()
+## ctype_digit()
 
 ```
 1. 检查字符串里的字符是不是数字，是返回ture，不是返回false
 ```
 
-##get_magic_quotes_gpc()
+## get_magic_quotes_gpc()
 
 ```
 1. magic_quotes_gpc=on时，函数magic_quotes_gpc()返回1
@@ -113,12 +112,12 @@ data：2020-11-17
 2. get_magic-quotes-gpc就是得到环境变量magic_quotes_gpc的值
 ```
 
-##intval()
+## intval()
 
 ```
 1. 用于获取变量的整数值
 ```
-##mysql_fetch_array
+## mysql_fetch_array
 
 ```
 1. 从结果中取出一行作为关联数组

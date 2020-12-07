@@ -3,18 +3,18 @@ title:SSH私钥泄露
 data:2020-12-07
 ---
 
-#信息探测
+# 信息探测
 ![密钥1](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/%E5%AF%86%E9%92%A51.jpg)
 
 
-#探测大端口的信息
+# 探测大端口的信息
 ![密钥2](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/%E5%AF%86%E9%92%A52.jpg)
 
 roots里面存的是不允许搜索引擎所探测的文件名，以及允许被探测的文件名
 
 ![密钥3](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/%E5%AF%86%E9%92%A53.jpg)
 
-#针对隐藏页面分析
+# 针对隐藏页面分析
 ![密钥4](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/%E5%AF%86%E9%92%A54.jpg)
 
 SSH 为 Secure Shell 的缩写，由 IETF 的网络小组（Network Working Group）
@@ -38,7 +38,7 @@ SSH 为 Secure Shell 的缩写，由 IETF 的网络小组（Network Working Grou
 
 输入了simon尝试发现不行
 
-#解密ssh密钥信息
+# 解密ssh密钥信息
 
 ![密钥8](https://github.com/xiaocheng10/xiaocheng10.github.io/blob/master/image/%E5%AF%86%E9%92%A58.jpg)
 
