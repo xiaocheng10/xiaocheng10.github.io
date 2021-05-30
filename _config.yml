@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
@@ -101,3 +102,6 @@ deploy:
   type: git
   repo: https://github.com/xiaocheng10/xiaocheng10.github.io.git#
   branch: master
+=======
+theme: jekyll-theme-hacker
+>>>>>>> 61c00a1c7e1342dbb5ec9b69133462b316c0892b
