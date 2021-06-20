@@ -173,7 +173,7 @@ public $str;
 
 class Test{
 
-public $p
+public $p;
 }
 
 $a=new Read();
