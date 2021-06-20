@@ -114,7 +114,7 @@ index.php.swp
 原理：数据库外泄是指数据库文件泄露，比如asp+access框架的数据库文件的泄露，此文件为mdb类型的文件，而SQLite数据库的文件泄露的文件类型是.db，而数据库系统会将数据保存在它们格式的文件中，而数据库文件又在web目录之下,因此可以通过下载数据库来获取数据，以asp+access框架的数据库为例：
 
 ```
-1.某些CMS的目录下存在/data/data.mdb文件，如：ctfshow中的web信息搜集的web20，构造url/db/db.mdb，即可下载，然后用记事本打开或用打开mdb文件
+1.某些CMS的目录下存在/data/data.mdb文件，如：ctfshow中的web信息搜集的web20，构造url/db/db.mdb，即可下载，然后用记事本打开
 2.ewebeditor后台GETSHELL，下载eweb的数据库就是关键一步
 ```
 
